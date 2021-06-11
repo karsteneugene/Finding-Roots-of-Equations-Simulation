@@ -48,6 +48,6 @@ class Bisection:
                 n += 1  # Add 1 to the number of iterations after every loop
                 if n == 100:  # If iterations reach 100, stop the loop and return last midpoint and iterations
                     return xm, n
-                if abs(self.f(xm)) < 1.0E-6:    # If the absolute value of f(xm) is less than 1.0^-6,
+                if abs(self.f(xm)) < 1.0E-6:    # If the absolute value of f(xm) is less than 1.0x10^-6,
                     return xm, n                # it has found the closest approximate of the root and returns that
                                                 # with the number of iterations

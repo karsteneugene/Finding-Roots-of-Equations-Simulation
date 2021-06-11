@@ -41,7 +41,7 @@ class Newton:
             n += 1  # Add 1 to the number of iterations after every loop
             if n == 300:  # If iterations reach 100, stop the loop and return last x value and iterations
                 return self.x, n
-            if abs(self.f(self.x)) < 1.0E-6:                # If the absolute value of f(x) is less than 1.0^-6,
+            if abs(self.f(self.x)) < 1.0E-6:                # If the absolute value of f(x) is less than 1.0x10^-6,
                 self.ax.plot(self.x, 0, 'o', c='lime')      # Plots a bright green point at x to indicate it
                 plt.pause(0.5)                              # found the closest approximation of the root
                 return self.x, n                            # then return x and the number of iterations
